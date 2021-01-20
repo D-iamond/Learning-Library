@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+	<style>
+		body{white-space: pre-wrap}
+	</style>
+	
+</head>
+
+<body>
+
+新增的主体结构元素
+1.section  定义文档中的节（section、区段）比如章节、页眉、页脚、或文档中的其他部分
+2.article  定义外部内容 （可独立存在）
+3.aside    附属信息，如广告、导航条、侧边栏
+4.nav      用来将具有导航性质的链接划分在一起  页内导航<a href="#id"></a>
+5.time     定义时间和日期
+
+
+新增的非主体元素
+1.header   放置页面的标题
+2.hgroup   对于页面或区段的标题进行组合。
+3.footer   可以作为上层父级内容区块或一个根区块的脚注
+4.figure   表示网页上可以独立的内容，移除后不会影响其他内容
+5.address  文档中呈现联系信息、地址等
+
+其他常用元素
+1.mark    呈现高亮   strong作者对文档某段文字的强调  em作者为了突出文章的重点
+2.ruby    
+由多个或一个字符（需要一个解释/发音）和一个提供该信息的rt元素组成，还包括可选的erp元素，定义当前浏览器不支持ruby元素是显示的内容
+1.<ruby><rt></rt></ruby>  2.<ruby><rt><rp>  (</rp>...<rp>)  <rp/></rt></ruby>
+
+3.progress        运行中的进程  max最大值 value当前值
+4.command         表示用户能够调用的命令，按钮、复选框等 <command type="command"> </command>
+5.embed           用来插入各种多媒体 <embed src="  "/>
+6.detail summary   表示拥护要求得到并且可以的细节信息，与summary配合使用，summary提供标题或图例
+					<details>
+					<summary>苹果</summary>
+					  dsbmksdn
+					</details>
+
+7.datalist		  用来辅助文本框的输入功能，与表单文本框的list属性绑定，设置id
+					<input type="text" list="worklist" />
+					<datalist id="worklist">
+						<option value="111"></option>
+						<option value="222"></option>
+						<option value="333"></option>
+					</datalist>
+
+
+
+
+新增全局属性
+1.contentEditable  是否允许用户编辑内容 true false
+2.spellcheck       是否对元素内容进行检查
+3.tabIndex         设置或返回的Tab按钮控制次序
+<button id="bt1" tabindex="2"></button>
+<button id="bt2" tabindex="3"></button>
+<button id="bt3" tabindex="1"></button>
+
+
+
+新增其他属性
+1.autofocus      在页面加载时，域自动获得焦点
+2.form           规定输入域所属域的一个或多个表单   id
+3.form overrides 允许重新设定form元素的某些属性 只是用<input> submit image
+					(1)formaction   
+					(2)formenctype
+					(3)formmethod
+					(4)formnovalidate 未验证
+					(5)formtarge      
+4.height width
+5.list           规定输入域的datalist
+6.max min step   用于包含数字和日期的input类型规定限定  step表示间隔
+      <input type="number" name="points" max="10" min="0" step="3"/>
+	  <input type="submit"/>
+	  
+7.multiple        规定输入域中可以选择多个值
+8.pattern(regexp)  规定用于验证input域的模式
+		<input type="text" name="qh" pattern="[0-9#@]{4}"/>
+        <input type="submit"/>
+9.placeholder     提供一种提示，描述所期待的值
+		<input type="text" name="yh" placeholder="用户的姓名"/>
+10.required         规定必须在提交之前填写		
+        <input type="text" name="yh" required="required"/>
+11.media          规定URL是为什么类型设备媒介进行优化
+12.type           规定URL的MIME类型，仅在herf属性存在时使用
+13.sizes
+14.targe          base元素中的属性功能，主要是保持与a元素的一致性
+
+
+</body>
+</html>
+
+
+
+

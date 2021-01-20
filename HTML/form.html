@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>form</title>
+	<style>
+		body{white-space: pre-wrap}
+	</style>
+</head>
+
+<body>
+	action 规定当提交表单时向何处发送数据，默认提交给本页
+	method 将表单数据传送给服务器处理，get、post
+				1.get 	是默认值，向服务器要数据时使用，该方法通过URL请求来传递用户数据。
+						将表单内各字段名称与其内容，以成对字符串连接，置于action所指程序URL后，表单数据直接显示在URL上
+				2.post    在数据提交给服务器处理时使用，通过HTTP post机制，将表单内各字段名称与其内容，放置在HTML表头(header)
+						一起发送给服务器端
+			
+			get：(传输数据量非常小，一般限制在2kb左右，执行效率好)	
+			post：传递数据量相对较大
+	
+	enctype 定义编码类型，及表单数据进行编码的方式
+			1.application/X-WWW-form-urlencoded，默认值，允许将普通字符、特殊字符提交给服务器，不允许提交文件
+			2.multipart/form-data，允许将文件提交给服务器
+			3.text/plain，只允许提交普通字符
+	
+			！！！如果有文件需要提交给服务器，method必须为post，enctype必须为multipart/form-data
+	
+	name  		定义表单的名称
+	novalidate  若出现该属性，则提交表单是不用验证
+	
+	
+	
+ Input元素属性标签
+	1.type  		创建各类型的输入控件
+	2.value 		规定input元素的值
+	3.size  		规定输入字段的尺寸（以字符计）
+	4.maxlength     规定输入字段允许的最大长度
+	5.name          input的名称
+	6.disabled      若出现该属性，控件禁用
+	
+		<input type="checkbox" value="体育"  id="体育"><label for="体育">体育</label>
+	7.autocomplete  规定是否使用输入的自动完成功能 值：on/off
+	8.autofocus     规定输入字段在页面加载时是否获得焦点
+	9.list 			引用包含输入字段的预定义选项的datalist
+	10.form 		规定input元素所属的一个或多个表单
+	11.min、max 	   规定input元素的最大值个最小值
+	12.multiple     规定允许用户输入一个以上的值
+	13.pattern 		用于检查input元素值的正则表达式
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

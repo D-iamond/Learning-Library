@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style>
+h1{backgrond-color:pink}
+	body{white-space: pre-wrap}
+</style>
+
+</head>
+
+<body>
+
+h1{ font-size:2em; margin: 1.34em 0;} 字体大小，外边距（上下，左右）
+h2{ font-size:1.5em; margin: 1.25em 0;}
+h3{ font-size:1.17em; margin: 1.17em 0;}
+h4{ font-size:1em; margin: 1.33em 0;}
+h5{ font-size:0.83em; margin: 1.39em 0;}
+h6{ font-size:0.75em; margin: 1.75em 0;}
+
+px:基于像素单位。
+em:一般用来测量长度的通用单位（例如元素周转的页边空白和填充），当用于指定字体大小时，em单位是指父元素的字体大小。
+pt:印刷业商场使用的单位，磅的意思。
+
+字体族分为sans-serif(无衬线字体) 和 serif (衬线体)
+
+font-size:xx-samll| x-small| small|           绝对字体尺寸。根据对象字体进行调整
+          medium| large| x-large| xx-large| 
+		  larger| smaller|                  相对字体尺寸。相对于父对象中字体尺寸进行相对增大/减小。使用成比例的em(倍数)单位计算
+          length                            百分数或者由浮点数字和单位标识符组成的长度值，不可为负值。其百分比去只是基于父对象中字体的尺寸
+ 
+
+
+<h1>啦啦啦</h1>
+<h2 style="font-family: tahoma,arial,,stxihei,微软雅黑,sans-serif">先英语 后中文</h2>
+<h3 style="font:14px/1.5 "宋体"">1.5为行间距</h3>
+
+	
+设置文本风格
+	1.标签
+<b>字体加粗</b>
+<i>字体斜体</i>
+<u>字体下划线</u>
+<em>文本强调</em>
+
+	2.CSS
+	font-weight:bold   加粗
+	font-style:italic  倾斜（使用文字的斜体）
+	font-style:oblique 倾斜（让没有斜体属性的文字倾斜）
+		
+设置文本阴影	
+	text-shadow: h-shadow v-shadow blur color;
+	h-shadow  必需值，水平阴影的位置，允许负值
+	v-shadow  必需值，垂直阴影的位置，允许负值
+	blur      可选，模糊的距离
+	
+控制换行
+	（1）使用white-space控制换行	，属性设置如何处理元素内的空白
+	    1.Pre:空白会被浏览器保留。其行为方式类似HTML中的<pre>标签</pre>
+		2.Nowrap:文本不会换行，文本会在同一行上继续，直到遇到<br>标签为止
+		3.pre-wrap:保留空白符秩序，但是正常的进行换行
+		4.pre-line:合并空白符秩序，但是保留换行符
+		5.inherit:规定应该从父元素继承white-space属性的值
+
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
